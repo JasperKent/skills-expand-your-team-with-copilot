@@ -483,7 +483,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function shareOnTwitter(activityName, activityDetails) {
     const text = encodeURIComponent(`Join ${activityName} at Mergington High School! ${activityDetails.description}`);
     const url = encodeURIComponent(window.location.href);
-    const shareUrl = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
+    const shareUrl = `https://x.com/intent/tweet?text=${text}&url=${url}`;
     window.open(shareUrl, '_blank', 'width=600,height=400');
   }
 
@@ -561,9 +561,9 @@ document.addEventListener("DOMContentLoaded", () => {
           <span>f</span>
           <span class="tooltip-text">Share on Facebook</span>
         </button>
-        <button class="social-share-button twitter tooltip" data-share="twitter" data-activity="${name}" title="Share on Twitter">
+        <button class="social-share-button twitter tooltip" data-share="twitter" data-activity="${name}" title="Share on X">
           <span>𝕏</span>
-          <span class="tooltip-text">Share on Twitter</span>
+          <span class="tooltip-text">Share on X</span>
         </button>
         <button class="social-share-button linkedin tooltip" data-share="linkedin" data-activity="${name}" title="Share on LinkedIn">
           <span>in</span>
