@@ -1,8 +1,20 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Dark mode functionality
   const darkModeToggle = document.getElementById("dark-mode-toggle");
+  
+  // Check if dark mode toggle exists before proceeding
+  if (!darkModeToggle) {
+    console.error("Dark mode toggle element not found");
+    return;
+  }
+  
   const themeIcon = darkModeToggle.querySelector(".theme-icon");
   const themeLabel = darkModeToggle.querySelector(".theme-label");
+  
+  if (!themeIcon || !themeLabel) {
+    console.error("Dark mode toggle icon or label not found");
+    return;
+  }
 
   // Check for saved dark mode preference
   function initializeDarkMode() {
